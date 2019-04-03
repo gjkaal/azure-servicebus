@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>netcoreapp2.2;netstandard2.0;net47</TargetFrameworks>
+    </PropertyGroup>
+    <PropertyGroup>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>Azure eventhub &amp; servicebus library</Description>
+        <Copyright>(c) 2019 - nice2experience.com - all rights reserved</Copyright>
+        <PackageTags>eventbub servicebus queue</PackageTags>
+        <NeutralLanguage>en</NeutralLanguage>
+        <Authors>GJH Kaal</Authors>
+        <Company>nice2experience</Company>
+        <PackageReleaseNotes>
+        </PackageReleaseNotes>
+        <RepositoryUrl>https://github.com/gjkaal/azure-servicebus</RepositoryUrl>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <VersionPrefix>0.0.1</VersionPrefix>
+        <VersionSuffix></VersionSuffix>
+        <IncludeSymbols>false</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Azure.EventHubs" Version="3.0.0" />
+        <PackageReference Include="Microsoft.Azure.EventHubs.Processor" Version="3.0.0" />
+    </ItemGroup> 
+    <ItemGroup>
+        <None Include="License.md" PackagePath="" Pack="true" >
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>
